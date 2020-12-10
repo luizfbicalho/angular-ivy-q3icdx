@@ -45,7 +45,7 @@ import { EditorModule } from '@progress/kendo-angular-editor';
 import { TreeListModule } from '@progress/kendo-angular-treelist';
 import { LayoutModule } from '@progress/kendo-angular-layout';
 
-
+import "zone.js";
 
 
 export function initializeApp(appConfig: AppConfig) {
