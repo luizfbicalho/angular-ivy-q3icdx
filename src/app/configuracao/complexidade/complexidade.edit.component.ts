@@ -1,10 +1,11 @@
 import {Component, OnInit, AfterViewInit, ViewChild} from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
 
-import {HttpError} from 'local/shared/models/httperror';
-import {CanDeactivateComponent } from 'local/shared/models/can.deactivate.component'
+import { CanDeactivateComponent } from '../../shared/models/can.deactivate.component';
+import { Complexidade } from '../../models/complexidade.model';
+
 import {ComplexidadeService} from "./complexidade.service";
-import {Complexidade} from 'local/models/complexidade.model';
+
 import { Subscription } from 'rxjs';
 
 

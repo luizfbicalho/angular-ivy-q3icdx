@@ -1,7 +1,4 @@
 
-
-import {DateUtil } from 'local/shared/models/dateutil.model';
-
 export class EntidadeBase {
     
     // ID

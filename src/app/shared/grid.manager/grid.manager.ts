@@ -1,10 +1,11 @@
 import { GridDataResult } from "@progress/kendo-angular-grid";
-import { ColumnSettings } from "local/shared/models/column-settings";
+
 import { DataSourceRequestState, FilterDescriptor, CompositeFilterDescriptor } from "@progress/kendo-data-query";
 import { Observable } from "rxjs";
 import { GridFilterService, IGridState, IFiltro } from "../services/gridfilter.service";
 
 import { Injectable } from "@angular/core";
+import { ColumnSettings } from '../models/column-settings';
 
 @Injectable()
 export class GridManagerComponent implements IGridState  {

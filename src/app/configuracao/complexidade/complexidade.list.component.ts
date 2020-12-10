@@ -1,10 +1,10 @@
-﻿
+
 import { Component, OnInit, Injectable, Inject } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { GridManagerComponent } from '../../shared/grid.manager/grid.manager';
+import { ColumnSettings } from '../../shared/models/column-settings';
 import { ComplexidadeService } from "./complexidade.service";
-import { GridManagerComponent } from 'local/shared/grid.manager/grid.manager';
-import { ColumnSettings } from 'local/shared/models/column-settings';
-import { GridFilterService } from 'local/shared/services/gridfilter.service';
+
 
 @Component({
     templateUrl: './complexidade.list.component.html',

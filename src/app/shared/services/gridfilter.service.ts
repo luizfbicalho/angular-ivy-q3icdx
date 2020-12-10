@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { FilterService } from './filter.service';
 import { DataSourceRequestState } from '@progress/kendo-data-query';
 import { GridManagerComponent } from '../grid.manager/grid.manager';
-import { ColumnSettings } from 'local/shared/models/column-settings';
+import { ColumnSettings } from '../models/column-settings';
 
 export interface IGridState {
   filtros: /*IFiltro |*/ IFiltro[];

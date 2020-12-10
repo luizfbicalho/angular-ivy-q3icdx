@@ -1,8 +1,9 @@
-﻿import {  Injectable } from '@angular/core';
+import {  Injectable } from '@angular/core';
 import {  ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import {ComplexidadeService} from "./complexidade.service";
-import {Complexidade} from 'local/models/complexidade.model';
+
 import { Observable } from 'rxjs';
+import { Complexidade } from '../../models/complexidade.model';
 
 @Injectable()
 export class ComplexidadeIdResolver  implements Resolve<Complexidade> {

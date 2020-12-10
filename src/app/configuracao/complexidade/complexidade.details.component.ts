@@ -2,8 +2,8 @@
 
 import {Component, OnInit, AfterViewInit, ViewChild} from '@angular/core';
 import {Router, ActivatedRoute } from '@angular/router';
-
-import {Complexidade} from 'local/models/complexidade.model';
+import { CanDeactivateComponent } from '../../shared/models/can.deactivate.component';
+import { Complexidade } from '../../models/complexidade.model';
 import { Subscription } from 'rxjs';
 import { BaseFormlyComponent } from '../../../agl-kendo/src/public-api';
 import { takeUntil } from 'rxjs/operators';

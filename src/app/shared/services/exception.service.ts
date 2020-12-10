@@ -3,8 +3,9 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 
-import { HttpError } from 'local/shared/models/httperror';
+
 import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest, HttpResponse, HttpErrorResponse } from '@angular/common/http';
+import { HttpError } from '../models/httperror';
 
 @Injectable()
 export class ExceptionService {

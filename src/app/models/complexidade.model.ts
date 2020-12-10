@@ -1,6 +1,6 @@
-﻿
 
-import {DateUtil } from 'local/shared/models/dateutil.model';
+
+
 import {EntidadeBaseDescricao } from './entidadebasedescricao.model';
 export class Complexidade extends EntidadeBaseDescricao {
     

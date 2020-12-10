@@ -1,14 +1,15 @@
 import {Component, OnInit, AfterViewInit, ViewChild} from '@angular/core';
 import {Router, ActivatedRoute } from '@angular/router';
-import {HttpError} from 'local/shared/models/httperror';
-import {CanDeactivateComponent } from 'local/shared/models/can.deactivate.component'
+
 import {ComplexidadeService} from "./complexidade.service";
-import {Complexidade} from 'local/models/complexidade.model';
+
 
 import { takeUntil } from 'rxjs/operators';
 import { FormGroup } from '@angular/forms';
 import * as fieldsJson from "./complexidade.json";
 import { BaseFormlyComponent } from '../../../agl-kendo/src/public-api';
+import { CanDeactivateComponent } from '../../shared/models/can.deactivate.component';
+import { Complexidade } from '../../models/complexidade.model';
 
 @Component({
     templateUrl : './complexidade.create.component.html'

@@ -2,12 +2,10 @@
 
 
 import {Injectable,Inject} from '@angular/core';
-import {HttpError} from 'local/shared/models/httperror';
-import {ModelState} from 'local/shared/models/modelstate';
+
 import {HttpClient, HttpResponse, HttpErrorResponse} from '@angular/common/http';
 import {Observable, of }  from 'rxjs';
-import {EntidadeId} from 'local/models/entidadeid.model'
-import {Complexidade} from 'local/models/complexidade.model';
+
 
 import { map, catchError } from 'rxjs/operators';
 
@@ -15,7 +13,10 @@ import { throwError } from 'rxjs';
 
 import { DataSourceRequestState } from '@progress/kendo-data-query';
 import { GridDataResult } from '@progress/kendo-angular-grid';
-import { getGridDataResult } from 'local/shared/models/griddataresult.model';
+import { Complexidade } from '../../models/complexidade.model';
+import { getGridDataResult } from '../../shared/models/griddataresult.model';
+import { EntidadeId } from '../../models/entidadeid.model';
+
 //https://medium.com/angular-in-depth/expecting-the-unexpected-best-practices-for-error-handling-in-angular-21c3662ef9e4
 @Injectable()
 export class ComplexidadeService {

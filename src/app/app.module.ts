@@ -49,7 +49,7 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
 
 
 export function initializeApp(appConfig: AppConfig) {
-	return () => appConfig.load();
+	return () => appConfig;
 }
 
 //import { TooltipModule } from '@progress/kendo-angular-tooltip';

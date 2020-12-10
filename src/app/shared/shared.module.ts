@@ -20,13 +20,13 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 
 
-import { GridManagerComponent } from 'local/shared/grid.manager/grid.manager';
 
 
 
 import { FormlyKendoModule } from '../../agl-kendo/src/public-api';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { FormlyModule } from '@ngx-formly/core';
+import { GridManagerComponent } from './grid.manager/grid.manager';
 
 
 @NgModule({

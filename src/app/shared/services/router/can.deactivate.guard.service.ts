@@ -1,9 +1,10 @@
 
 import {from as observableFrom,  Observable } from 'rxjs';
 import { CanDeactivate } from '@angular/router';
-import { CanDeactivateComponent } from 'local/shared/models/can.deactivate.component';
+
 
 import { Injectable }             from '@angular/core';
+import { CanDeactivateComponent } from '../../models/can.deactivate.component';
 
 @Injectable()
 export class CanDeactivateGuard implements CanDeactivate<CanDeactivateComponent> {

@@ -33,15 +33,4 @@ export class AppConfig {
       }    
       AppConfig.settings = config ;
     }
-    load() {
-        const jsonFile = `assets/config/config.${environment.name}.json`;
-        return new Promise<void>((resolve, reject) => {
-            this.http.get(jsonFile).toPromise().then((response : IAppConfig) => {
-               AppConfig.settings = <IAppConfig>response;
-               resolve();
-            }).catch((response: any) => {
-               reject(`Could not load file '${jsonFile}': ${JSON.stringify(response)}`);
-            });
-        });
-    }
 }
