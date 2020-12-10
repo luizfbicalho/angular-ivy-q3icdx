@@ -7,7 +7,7 @@ import {ComplexidadeService} from "./complexidade.service";
 import {Complexidade} from 'local/models/complexidade.model';
 import { Subscription } from 'rxjs';
 
-import { ToastService } from "local/shared/toast/toast";
+
 import { BaseFormlyComponent } from '../../../agl-kendo/src/public-api';
 import { takeUntil } from 'rxjs/operators';
 import { FormGroup } from '@angular/forms';
@@ -22,8 +22,7 @@ export class ComplexidadeEditComponent  extends BaseFormlyComponent<Complexidade
     constructor(
         private _bindService: ComplexidadeService,
         private _router: Router,
-        private _route: ActivatedRoute,
-        private _toastService: ToastService
+        private _route: ActivatedRoute
       ) {
         super();
       }
@@ -42,7 +41,6 @@ export class ComplexidadeEditComponent  extends BaseFormlyComponent<Complexidade
         if (this.Form.valid) {
             this._bindService.put(this.Model).pipe(takeUntil(this.Destroy$)).subscribe(
                 x => {
-                    this._toastService.success("", "Operação realizada com sucesso");
                     this.Form.markAsPristine();
                     this.onBack();
                 }, // a cada resposta

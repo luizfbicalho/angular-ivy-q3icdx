@@ -3,7 +3,7 @@ import { ColumnSettings } from "local/shared/models/column-settings";
 import { DataSourceRequestState, FilterDescriptor, CompositeFilterDescriptor } from "@progress/kendo-data-query";
 import { Observable } from "rxjs";
 import { GridFilterService, IGridState, IFiltro } from "../services/gridfilter.service";
-import { UserPermissionService } from "local/shared/services/user.permission.service";
+
 import { Injectable } from "@angular/core";
 
 @Injectable()
@@ -14,7 +14,8 @@ export class GridManagerComponent implements IGridState  {
   private _keyName: string;
   _permissao: string = null;
 
-  constructor( private _gridFilterService: GridFilterService,  private _userPermissionService: UserPermissionService = null)
+
+  constructor( private _gridFilterService: GridFilterService )
   {
   }
 
@@ -85,10 +86,7 @@ export class GridManagerComponent implements IGridState  {
   }
 
   validarBotao(botao: string): boolean {
-    if (this._permissao && this._userPermissionService) {
-      let permissao = this._permissao + "." + botao;
-      return this._userPermissionService.validatePermissaoAccess(permissao);
-    }
+   
     return true;
   }
 

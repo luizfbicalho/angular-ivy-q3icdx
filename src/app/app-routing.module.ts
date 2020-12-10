@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { MenuPermissionGuardService } from 'local/shared/services/router/activate.guard.service';
+
 
 const routes = [
     { path: '', component: HomeComponent },
@@ -9,7 +9,6 @@ const routes = [
 
   {
     path: 'complexidade',
-    canActivate: [MenuPermissionGuardService],
     loadChildren: () => import('./configuracao/complexidade/complexidade.module').then(m => m.ComplexidadeModule)
   }
 ];

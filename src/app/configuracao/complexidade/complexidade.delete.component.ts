@@ -6,7 +6,6 @@ import {HttpError} from 'local/shared/models/httperror';
 import {ComplexidadeService} from "./complexidade.service";
 import {Complexidade} from 'local/models/complexidade.model';
 import { Subscription } from 'rxjs';
-import { ToastService } from "local/shared/toast/toast";
 import { BaseFormlyComponent } from '../../../agl-kendo/src/public-api';
 import { takeUntil } from 'rxjs/operators';
 import { FormGroup } from '@angular/forms';
@@ -22,8 +21,7 @@ export class ComplexidadeDeleteComponent  extends BaseFormlyComponent<Complexida
     constructor(
         private _bindService: ComplexidadeService,
         private _router: Router,
-        private _route: ActivatedRoute,
-        private _toastService: ToastService
+        private _route: ActivatedRoute
       ) {
         super();
       }
@@ -36,7 +34,6 @@ export class ComplexidadeDeleteComponent  extends BaseFormlyComponent<Complexida
     onSubmit(): void {
         this._bindService.delete(this.Model.Id).pipe(takeUntil(this.Destroy$)).subscribe(
             x => {
-                this._toastService.success("", "Operação realizada com sucesso");
                 this.onBack();
             }, // a cada resposta
             error => { /*this.form.AddToModelState(error.error.ModelState);*/ },//on error

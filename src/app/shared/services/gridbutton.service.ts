@@ -4,10 +4,6 @@ import { CanActivate,
     ActivatedRouteSnapshot,
     RouterStateSnapshot }    from '@angular/router';
 
-
-import {UserPermissionService } from './user.permission.service'
-
-
 interface GridColumnCommandItem {
     name?: string;
     text?: string;
@@ -19,9 +15,7 @@ interface GridColumnCommandItem {
 @Injectable()
 
 export class GridButtonService {
-    constructor(
-        private _userPermissionService: UserPermissionService) {
-    }
+
 
     public GetButtons(buttons: GridColumnCommandItem[], tela: string): GridColumnCommandItem[] {
         let returnItens: GridColumnCommandItem[] = [];
@@ -31,7 +25,7 @@ export class GridButtonService {
                 strpermissao = b.permissao.toLowerCase();
             }
             var permissao = tela + "." + strpermissao;
-            if (b.permissao == null || this._userPermissionService.validatePermissaoAccess(permissao)) {
+            if (b.permissao == null || true) {
                 // b.click = (e) => { e.preventDefault(); };
                 var index = buttons.indexOf(b);
                 returnItens.push(b);
@@ -44,7 +38,7 @@ export class GridButtonService {
     public GetButton(tela: string, name: string): boolean {
         
         var permissao = tela + "." + name;
-        return this._userPermissionService.validatePermissaoAccess(permissao);
+        return true;
 
     }
 }

@@ -4,7 +4,7 @@ import {HttpError} from 'local/shared/models/httperror';
 import {CanDeactivateComponent } from 'local/shared/models/can.deactivate.component'
 import {ComplexidadeService} from "./complexidade.service";
 import {Complexidade} from 'local/models/complexidade.model';
-import { ToastService } from "local/shared/toast/toast";
+
 import { takeUntil } from 'rxjs/operators';
 import { FormGroup } from '@angular/forms';
 import * as fieldsJson from "./complexidade.json";
@@ -19,8 +19,7 @@ export class ComplexidadeCreateComponent  extends BaseFormlyComponent<Complexida
     constructor(
         private _bindService: ComplexidadeService,
         private _router: Router,
-        private _route: ActivatedRoute,
-        private _toastService: ToastService
+        private _route: ActivatedRoute
       ) {
         super();
       }
@@ -34,7 +33,6 @@ export class ComplexidadeCreateComponent  extends BaseFormlyComponent<Complexida
         if (this.Form.valid) {
             this._bindService.post(this.Model).pipe(takeUntil(this.Destroy$)).subscribe(
                 x => {
-                    this._toastService.success("", "Operação realizada com sucesso");
                     this.Form.markAsPristine();
                     this.onBack();
                 }, // a cada resposta

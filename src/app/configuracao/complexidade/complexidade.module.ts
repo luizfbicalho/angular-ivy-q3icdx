@@ -1,9 +1,7 @@
-﻿
+
 
 import {Component, NgModule}      from '@angular/core';
 import {SharedModule}  from 'local/shared/shared.module';
-import {CanDeactivateGuard} from 'local/shared/services/router/can.deactivate.guard.service'
-import {LoggedInGuardService, MenuPermissionGuardService} from 'local/shared/services/router/activate.guard.service'
 import {routing} from './complexidade.routing';
 import {ComplexidadeListComponent} from './complexidade.list.component';
 import {ComplexidadeCreateComponent} from './complexidade.create.component';

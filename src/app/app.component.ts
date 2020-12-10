@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-import { UserTokenService } from './shared/services/user.token.service';
-import { AccountService } from './login/account.service';
 
-import { SpinnerService } from './shared/spinner/spinner';
-import { LoginViewModel } from './viewmodels/login.viewmodel';
 
 @Component({
 	selector: 'app-root',
@@ -17,10 +13,7 @@ export class AppComponent {
   public login: boolean = false;
 
 	constructor(
-		private _accountService: AccountService,
-		private _userTokenService: UserTokenService,
 
-		private _spinnerService: SpinnerService
 	) {
 		this.items = this.mapItems();
 	}
@@ -42,9 +35,7 @@ export class AppComponent {
 
 	}
 
-	loginEvent(e: LoginViewModel) {
-	
-	}
+
 
 	loginRede() {
 	}

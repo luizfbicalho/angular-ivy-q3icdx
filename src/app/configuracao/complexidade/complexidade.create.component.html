@@ -1,4 +1,4 @@
-﻿<div class="page-titles">
+<div class="page-titles">
   <div class="container">
     <div class="row">
       <div class="col-md-5 col-8 align-self-center">
@@ -8,20 +8,12 @@
   </div>
 </div>
 <div class="container">
-  <kendo-card class="form-card" [width]="'100%'">
-    <kendo-card-header>
-      <h2>
-        Criar Complexidade
-      </h2>
-    </kendo-card-header>
-    <kendo-card-body>
+
         <formly-form [form]="Form"
                  [model]="Model"
                  [fields]="Fields">
         </formly-form>
-    </kendo-card-body>
-
-  <kendo-card-footer>
+   
   <button
     type="button"
     class="btn btn-primary"
@@ -31,7 +23,6 @@
   <button type="button" (click)="onBack()" class="btn btn-secondary ml-1">
     Voltar
   </button>
-</kendo-card-footer>
-  </kendo-card>
+
 
 </div>
