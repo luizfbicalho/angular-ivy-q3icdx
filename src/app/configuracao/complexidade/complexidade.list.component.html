@@ -1,0 +1,59 @@
+﻿<div class="page-titles">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-8 align-self-center">
+        <h3 class="mb-3 mt-4 page-title">Complexidade</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <a role="button" class="btn btn-primary btn-rounded" (click)="create()">
+      <span class="k-icon k-i-plus btn-plus"></span>
+      <span class="labelBtnPlus">Novo item</span>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="container app-grid">
+    <kendo-grid [data]="manager.gridData"
+                [pageSize]="manager.state.take"
+                [skip]="manager.state.skip"
+                [sort]="manager.state.sort"
+                [filter]="manager.state.filter"
+                [sortable]="true"
+                [pageable]="true"
+                [filterable]="true"
+                (dataStateChange)="manager.dataStateChange($event)">
+        <kendo-grid-column field="Definicao" title="Definicao" width="250px" >
+        </kendo-grid-column>
+        <kendo-grid-column field="Tamanho" title="Tamanho" width="60px" filter="numeric" format="{0:N0}">
+        </kendo-grid-column>
+        <kendo-grid-column field="Descricao" title="Descrição" width="250px" >
+        </kendo-grid-column>
+        <kendo-grid-command-column width="150px">
+            <ng-template kendoGridCellTemplate let-dataItem="dataItem">
+            <div class="grid-actions" kendoTooltip>
+                <a role="button" (click)="details(dataItem)"  class="btn btn-floating" title="Ver Item">
+                <span class="icon fas fa-eye"></span>
+                </a>
+                <a role="button" (click)="edit(dataItem)" *ngIf="manager.validarBotao('editar')" class="btn btn-floating grid-edit" data-toggle="tooltip" title="Editar">
+                <span class="icon fas fa-pencil-alt"></span>
+                </a>
+                <a role="button" (click)="delete(dataItem)" *ngIf="manager.validarBotao('deletar')" class="btn btn-floating grid-delete" data-toggle="tooltip" title="Deletar">
+                <span class="icon fas fa-times"></span>
+                </a>
+            </div>
+            </ng-template>
+        </kendo-grid-command-column>
+        <kendo-grid-messages noRecords="Não foram encontrados dados.">
+        </kendo-grid-messages>
+        <ng-template kendoPagerTemplate let-totalPages="totalPages" let-currentPage="currentPage">
+            <kendo-pager-next-buttons></kendo-pager-next-buttons>
+            <kendo-pager-numeric-buttons [buttonCount]=5></kendo-pager-numeric-buttons>
+            <kendo-pager-prev-buttons></kendo-pager-prev-buttons>
+        </ng-template>
+    </kendo-grid>
+</div>

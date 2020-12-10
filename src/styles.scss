@@ -1,0 +1,53 @@
+
+
+// @import '~bootstrap/dist/css/bootstrap.min.css';
+//@import 'styles/app.css';
+//@import 'styles/color.css';
+//@import 'styles/formcustom.css';
+//@import 'styles/treeview.css';
+//@import "~ngx-toastr/toastr.css";
+
+
+
+
+@import 'styles/variablespager.scss';
+@import "~@progress/kendo-theme-bootstrap/scss/pager/_index.scss";
+//@import '~@progress/kendo-theme-default/scss/pager/_index.scss';
+
+@import 'styles/variablestextbox.scss';
+@import "~@progress/kendo-theme-bootstrap/scss/textbox/_index.scss";
+@import "~@progress/kendo-theme-bootstrap/scss/combobox/_index.scss";
+@import "~@progress/kendo-theme-bootstrap/scss/multiselect/_index.scss";
+@import "~@progress/kendo-theme-bootstrap/scss/notification/_index.scss";
+//@import "~@progress/kendo-theme-default/scss/textbox/_index.scss";
+
+@import 'styles/grid.scss';
+@import "~@progress/kendo-theme-bootstrap/scss/grid/_index.scss";
+//@import "~@progress/kendo-theme-default/scss/grid/_index.scss";
+$primary: #ff4f00;
+$accent: #ff4f00;
+@import "~@progress/kendo-theme-bootstrap/scss/loader/_index.scss";
+
+@import "~@progress/kendo-theme-bootstrap/scss/card/_index.scss";
+
+// import configuration from the theme builder
+//@import 'styles/variables.scss';
+// import the base theme
+//
+
+
+@import 'styles/variablesbootstrap.scss';
+@import "~bootstrap/scss/bootstrap.scss";
+
+@import 'styles/color.scss';
+
+@import 'styles/header.scss';
+
+/* Importa o Estilo do Menu*/
+@import 'styles/sidebar.scss';
+@import 'styles/menu.scss';
+
+@import 'styles/pageheader.scss';
+
+@import 'styles/form.scss';
+@import 'styles/notification.scss';

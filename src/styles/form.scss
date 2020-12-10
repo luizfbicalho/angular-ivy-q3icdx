@@ -1,0 +1,29 @@
+
+.form-card {
+  border: 1px solid rgba(0,0,0,.125);
+  margin-bottom: 30px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+ }
+.form-card .k-card-header {
+    margin: 0;
+    font-weight: 400;
+    color: $card-header-color;
+    background-color: #efefef;
+    border-color: #E8E8E8;
+    font-size: 18px;
+}
+
+.form-card .k-card-header h1,
+.form-card .k-card-header h2,
+.form-card .k-card-header h3,
+.form-card .k-card-header h4,
+.form-card .k-card-header h5 {
+    font-weight: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+
+.form-card .k-card-footer {
+  background-color: #efefef;
+  border-color: #E8E8E8;
+}

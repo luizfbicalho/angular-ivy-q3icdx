@@ -1,0 +1,88 @@
+<div class="wrapper fix-header">
+  <header class="topbar sticky-top">
+    <nav class="navbar top-navbar navbar-expand-md navbar-light">
+      <!-- ============================================================== -->
+      <!-- Logo -->
+      <!-- ============================================================== -->
+      <div class="navbar-header">
+        <div class="sidebartoggler nav-toggler waves-effect waves-dark" (click)="showSideBar()">
+          <i class="fa fa-bars"></i>
+        </div>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" alt="homepage" class="dark-logo" height="35px">
+        </a>
+      </div>
+      <!-- ============================================================== -->
+      <!-- End Logo -->
+      <!-- ============================================================== -->
+      <div class="navbar-collapse">
+        <!-- ============================================================== -->
+        <!-- User profile and search -->
+        <!-- ============================================================== -->
+        <ul class="navbar-nav my-lg-0 ml-auto">
+          <!--<li class="nav-item">
+            <a class="nav-link waves-effect waves-dark">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>-->
+          <!-- ============================================================== -->
+          <!-- Profile -->
+          <!-- ============================================================== -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+              <img src="images/avatar.png" alt="user" class="profile-pic">
+
+            </a>
+            <div class="dropdown-menu dropdown-menu-right scale-up">
+              <ul class="dropdown-user">
+                <li><a href="#"><i class="fa fa-user"></i> Meu perfil</a></li>
+                <li><a href="#"><i class="fa fa-wallet"></i> Meu Balanço</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i> Inbox</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><i class="fa fa-cog"></i> Configurações de conta</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- ============================================================== -->
+  <!-- End Topbar header -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- Left Sidebar - style you can find in sidebar.scss  -->
+  <!-- ============================================================== -->
+  <aside id="sidebar" [className]="cssClassSideBar">
+    <div class="sidebar-header">
+        <div class="user-profile media">
+          <div class="media-left">
+            <div class="profile-img">
+              <img src="images/avatar.png" alt="user">
+            </div>
+          </div>
+          <div class="profile-text media-body">
+            <span class="title">Bem Vindo(a)</span>
+            <span class="name">{{NomeUser}}</span>
+          </div>
+        </div>
+    </div>
+    <div class="sidebar-content">
+      <agl-menulateral></agl-menulateral>
+    </div>
+  </aside>
+  <!-- ============================================================== -->
+  <!-- Page wrapper  -->
+  <!-- ============================================================== -->
+  <div class="page-wrapper">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- ============================================================== -->
+  <!-- End / Page wrapper  -->
+  <!-- ============================================================== -->
+</div>
+<!--<app-login *ngIf="login" (login)="loginEvent($event)" (loginRede)="loginRede()"></app-login>
+<agl-spinner *ngIf="!login"></agl-spinner>-->

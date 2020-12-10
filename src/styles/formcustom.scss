@@ -1,0 +1,550 @@
+body {
+	background-color: #eef5f9;
+}
+
+/*inicio: agl-error-message*/
+.form-control.ng-pristine.ng-invalid.ng-touched,
+.form-control.ng-dirty.ng-invalid.ng-touched {
+	border-color: #dc3545;
+}
+agl-error-message span {
+	margin-top: .25rem;
+	font-size: 90%;
+	color: #dc3545;
+}
+/*Fim agl-error-message*/
+
+.app-card .card-footer button {
+	margin-right: 10px;
+}
+kendo-dialog button {
+	margin-right: 10px;
+}
+
+.k-button.k-primary,
+.k-slider .k-draghandle,
+.k-switch-background,
+.k-switch-on .k-switch-handle,
+.km-switch-background,
+.km-switch-on .km-switch-handle {
+	color: #fff;
+	background-color: #22a7bd;
+	border-color: #22a7bd;
+}
+
+.k-switch-label-off {
+	color: gray;
+}
+
+.labelswitch {
+	margin-right: 10px;
+}
+
+.btn-even {
+	color: #fff;
+	background-color: #6f45c8;
+	border-color: #6f45c8;
+}
+
+/*Inicio Grid*/
+
+.app-grid kendo-grid {
+	border-style: none;
+}
+
+.app-grid kendo-grid .k-grid-header {
+	display: none;
+}
+
+.app-grid kendo-grid-toolbar {
+	border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+	background-color: #efefef;
+	padding: .75rem 1.25rem;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.gridtoolbar {
+	display: flex;
+}
+
+.k-icon.k-i-plus.btn-plus {
+	margin-right: .5rem !important;
+}
+
+.gridtoolbar .labelBtnPlus {
+	vertical-align: middle;
+}
+.gridtoolbar .tituloDivTable {
+	display: table;
+	height: 50px;
+}
+
+.gridtoolbar .tituloDivCell {
+	display: table-cell;
+	color: #22a7bd;
+	font-size: 18px;
+	font-weight: 400;
+	vertical-align: middle;
+}
+
+.gridtoolbar .gridSearchIcon {
+	font-size: 25px;
+	font-weight: 900;
+	width: 30px;
+}
+
+.app-grid .k-grid td {
+	border-color: rgba(33, 37, 41, .125);
+	color: #818fae;
+	border-color: #efefef;
+}
+
+.app-grid span.title {
+	margin-bottom: 0;
+	display: block;
+}
+
+.app-grid .k-grid-aria-root {
+	border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+	border-width: 1px;
+	border-style: solid;
+	-webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.app-grid kendo-pager {
+	background-color: #eef5f9;
+	border-color: #eef5f9;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.app-grid .gridfooter {
+	margin-top: 10px;
+	width: 100%;
+	overflow: auto;
+}
+.app-grid .gridfooter kendo-pager-prev-buttons {
+	float: right;
+}
+.app-grid .gridfooter kendo-pager-numeric-buttons {
+	float: right;
+	-webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+.app-grid .gridfooter kendo-pager-next-buttons {
+	float: right;
+}
+
+.app-grid .gridfooter .k-pager-numbers .k-state-selected,
+.k-pager-numbers .k-state-selected:hover {
+	background-color: #e9ecef;
+	border-color: #e9ecef;
+	color: #835fd3 !important;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 1rem 1.5rem;
+}
+
+.app-grid .gridfooter .k-pager-numbers .k-link {
+	border: 0;
+	font-size: 16px;
+	padding: 1rem 1.5rem;
+	color: #818fae;
+}
+
+.app-grid .gridfooter kendo-pager-prev-buttons a {
+	color: #835fd3;
+	border: 0;
+	font-size: 16px;
+	padding: 1rem 1.5rem;
+}
+
+.app-grid .gridfooter kendo-pager-prev-buttons a:first-child {
+	border-top-left-radius: 5rem;
+	border-bottom-left-radius: 5rem;
+	-webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+.app-grid .gridfooter kendo-pager-prev-buttons a:nth-child(2) {
+	-webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.app-grid .gridfooter kendo-pager-next-buttons a {
+	color: #835fd3;
+	border: 0;
+	font-size: 16px;
+	padding: 1rem 1.5rem;
+}
+.app-grid .gridfooter kendo-pager-next-buttons a:nth-child(1) {
+	-webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+.app-grid .gridfooter kendo-pager-next-buttons a:nth-child(2) {
+	border-top-right-radius: 5rem;
+	border-bottom-right-radius: 5rem;
+	-webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.app-grid .gridfooter kendo-pager-prev-buttons a .k-icon,
+.app-grid .gridfooter kendo-pager-next-buttons a .k-icon {
+	font-size: 26px;
+}
+.grid-actions .btn {
+	margin-right: 5px;
+}
+.app-grid .k-command-cell {
+	padding: .25rem;
+}
+
+.gridfooter {
+	font-weight: bold;
+}
+/*Fim Grid*/
+/*Menu */
+agl-menulateral a {
+	cursor: pointer;
+}
+
+.sidebartoggler {
+	cursor: pointer;
+}
+
+/* Table as DIV*/
+
+/* DivTable.com */
+.divTableShadow {
+	-webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.divTable {
+	display: table;
+	width: 100%;
+}
+
+.divTable.tableNivel2Header {
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+	border: 1px solid #ced4da;
+	background-color: #efefef;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.divTable.tableNivel2Body {
+	border-bottom-left-radius: .25rem;
+	border-bottom-right-radius: .25rem;
+	border: 1px solid #ced4da;
+}
+
+.divTableRow {
+	display: table-row;
+}
+
+.tableNivel2Body .divTableRow {
+	background-color: #efefef;
+	border-top: 1px solid #ced4da;
+}
+
+.divTableCell,
+.divTableHead {
+	color: rgb(129, 143, 174);
+	display: table-cell;
+	padding: 3px 10px;
+}
+
+.divTableCell.divTableBold {
+	font-weight: bold;
+}
+
+.divTableCell.divTableNegativo {
+	color: red;
+}
+.divTableCellNumber {
+	text-align: right;
+}
+.divTableHeadNumber {
+	text-align: center;
+}
+
+.divTableHeading {
+	display: table-header-group;
+	font-weight: bold;
+}
+
+.divTableFoot {
+	background-color: #eee;
+	display: table-footer-group;
+	font-weight: bold;
+}
+
+.divTableBody {
+	display: table-row-group;
+}
+
+.tableNivel2buttons {
+	margin-top: 10px;
+}
+
+.divTableCommand a {
+	margin-right: 5px;
+}
+
+/*Formula*/
+.btnCustomEven {
+	padding: 0.375rem 0.75rem !important;
+	margin: 3px !important;
+}
+
+.divformula {
+	width: 100%;
+	min-height: 200px;
+	border: 1px solid gray;
+}
+.divlixeira {
+	width: 100%;
+	height: 161px;
+	border: 1px solid gray;
+}
+.lixeiraSortable {
+	width: 100%;
+	height: 161px;
+	border: 1px solid gray;
+}
+
+.itemSortableFormula {
+	display: inline-block;
+}
+
+.itemFormula {
+	display: inline-block;
+	margin: 5px;
+	font-size: .81rem;
+	padding: 5px;
+	border-radius: .125rem;
+	white-space: normal;
+	word-wrap: break-word;
+	color: #454545;
+	background-color: #d3d3d3;
+	border-color: #d3d3d3;
+}
+/*Fim Formula*/
+
+/*inicio Tooltip*/
+.k-tooltip {
+	background: #19bbc1 !important;
+}
+.k-tooltip .k-callout {
+	color: #19bbc1 !important;
+}
+/*Fim Tooltip*/
+
+/*Inicio Formulario*/
+.form-group .title {
+	display: block;
+	color: #818fae;
+	font-weight: bold;
+}
+
+.form-group .field {
+	color: #818fae;
+}
+/*Fim Formulario*/
+
+.k-window-titlebar.k-dialog-titlebar {
+	background-color: #efefef;
+	color: #22a7bd;
+}
+.kendowindowbuttons button {
+	margin-right: 10px;
+}
+
+/*Inicio Upload de Documentos*/
+.uploadDoc .k-upload {
+	width: 250px;
+	border-color: #efefef;
+}
+.uploadDoc .k-button.k-upload-button {
+	color: #fff;
+	background-color: #6f45c8;
+	border-color: #6f45c8;
+	font-size: small;
+}
+.uploadDoc .k-dropzone {
+	background-color: #efefef;
+}
+/*Fim Upload de Documentos*/
+
+/*Inicio Cockpit*/
+.app-grid .cockpitgrid kendo-grid .k-grid-header {
+	display: block;
+}
+.k-grid th.cockpitHeader.k-header {
+	border-color: #efefef;
+	font-weight: bold;
+	color: #818fae;
+}
+.cockpit-filter {
+	cursor: pointer;
+}
+/*Fim Cockpit*/
+
+/*Tabela*/
+.tabelasimples {
+	width: 100%;
+	font-size: 16px;
+}
+.tabelasimples thead {
+	background-color: #f8f9fa;
+}
+.tabelasimples th {
+	border-color: #efefef;
+	font-weight: bold;
+	color: #818fae;
+	border-collapse: separate;
+	border: 1px solid #efefef;
+	padding: .75rem;
+}
+.tabelasimples td {
+	border-collapse: separate;
+	border: 1px solid #efefef;
+	color: #818fae;
+	padding: .75rem;
+}
+.tabelasimples tr:nth-child(even) {
+	background-color: rgba(33, 37, 41, .03);
+}
+
+/*Fim Tabela*/
+
+/*Tela da analise*/
+.btn-analise-item {
+	padding: 5px;
+}
+
+/*Fim Tela da analise*/
+
+/* Tela de Cadastro*/
+.k-form-field {
+	margin-top: 9px;
+}
+
+.k-radio-label {
+	margin-right: 10px;
+}
+
+/* Fim da tela de cadastro*/
+
+/* Tela Analise Financiamento */
+
+.k-tabstrip .k-item.k-state-active,
+.k-calendar .k-nav-fast:active,
+.k-calendar .k-nav-next:active,
+.k-calendar .k-nav-prev:active,
+.k-panelbar > .k-item > .k-link.k-state-selected {
+	color: #fff !important;
+	background: #22a7bd !important;
+	border-color: #22a7bd !important;
+}
+
+.k-panelbar > .k-item > .k-link.k-state-focused.k-state-selected {
+	box-shadow: 0 0 0 3px #22a7bd !important;
+}
+
+.k-tabstrip .k-item {
+	color: #607d8b !important;
+}
+
+/* */
+
+/* Form Custom */
+
+.divTableCustom {
+	border-collapse: collapse;
+}
+
+.tableNivel2HeaderCustom {
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+	border: 1px solid #ced4da;
+	background-color: #efefef;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.tableNivel2BodyCustom {
+	border-bottom-left-radius: .25rem;
+	border-bottom-right-radius: .25rem;
+	border: 1px solid #ced4da;
+	background-color: #efefef;
+}
+
+.labelgrid {
+	font-size: 18px;
+	padding: .84rem 2.14rem;
+	padding-top: 0.84rem;
+	padding-right: 2.14rem;
+	padding-bottom: 0.84rem;
+	padding-left: 2.14rem;
+	font-weight: 400;
+	color: rgb(34, 167, 189);
+}
+
+kendo-dialog-actions .btn {
+	margin-right: 10px;
+}
+
+.agl-error-message span {
+	margin-top: .25rem;
+	font-size: 90%;
+	color: #dc3545;
+}
+
+.spanreadonly {
+	background-color: rgb(233, 236, 239);
+}
+
+.headersecao {
+	color: #22a7bd;
+}
+
+.rowmenuconjuge {
+	margin-top: 10px;
+}
+
+.rowmenucadastro button,
+.rowmenuconjuge button {
+	height: 100%;
+}
+
+/*Seção Analise*/
+.linhaBotoesSuperiores * {
+	margin: 10px;
+}
+
+.linhaBotoesSuperiores .btn-analise-item {
+	width: 200px;
+}
+/*Fim Seção Analise*/
+
+.inputsearch input {
+	background-color: white;
+}
+
+#toast-container > div {
+	opacity: 1;
+}
+
+/* form-control kendo-multiselect */
+kendo-multiselect.form-control {
+	height: 100%;
+}
+/* Filtro inbox */
+.card-body.filtroInboxPendencias {
+	padding-top: 0;
+	padding-bottom: 0;
+}

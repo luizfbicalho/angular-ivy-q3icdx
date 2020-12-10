@@ -1,0 +1,16 @@
+
+
+<nav class="sidebar-nav">
+  <ul class="list-unstyled components">
+    <li *ngFor="let node of nodesMenu; let i=index">
+      <a *ngIf="node.Childrens" data-toggle="collapse" [attr.aria-expanded]="node.Expanded" class="dropdown-toggle" (click)="clickItem(node)">{{node.Text}}</a>
+      <ul *ngIf="node.Childrens" [className] ="node.UlChildrenCssClass" class="collapse list-unstyled">
+        <li *ngFor="let children of node.Childrens">
+          <a (click)="clickItem(children)">{{children.Text}}</a>
+        </li>
+      </ul>
+      <a *ngIf="!node.Childrens" (click)="clickItem(node)">{{node.Text}}</a>
+    </li>    
+  </ul>
+</nav>
+

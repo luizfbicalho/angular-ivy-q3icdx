@@ -1,0 +1,23 @@
+﻿{
+	"env": {
+		"name": "DEV",
+		"ambiente": "Desenvolvimento"
+	},
+	"appInsights": {
+		"instrumentationKey": "<dev-guid-here>"
+	},
+	"logging": {
+		"console": false,
+		"appInsights": false
+	},
+	"apiServer": {
+		"ApiEndpoint": "http://localhost/AGL.Tenper.Web/",
+		"Domain": "localhost"
+	},
+	"apiModuloContratos": {
+		"ApiEndpoint": "https://contratoqas.even.com.br/",
+		"client_id": "719b5e50-36a0-4333-a69a-963b2f0a325f",
+		"client_secret": "aMaYoxk8/EyQQ4xhT38rcw==",
+		"IdTransformacaoAnalisePDF": 227
+	}
+}

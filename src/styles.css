@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/* Importa o Estilo do Menu*/
+@import 'styles/sidebar.css';
+@import 'styles/menu.css';
+
+@import 'styles/app.css';
+@import 'styles/color.css';
+@import 'styles/formcustom.css';
+@import 'styles/treeview.css';
+
+@import "~ngx-toastr/toastr.css";

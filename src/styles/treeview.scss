@@ -1,0 +1,149 @@
+#treefluxo {
+  /*background-color:red;*/
+  color: #607d8b;
+}
+
+#treefluxo .k-icon {
+  margin-left:10px;
+  font-size:16px;
+}
+
+
+#treefluxo .fluxo {
+  padding: 5px 10px 5px 10px;
+  background-color: rgb(32, 164, 187);
+  border-radius: .25rem;
+  color: #fff;
+}
+
+#treefluxo .versao {
+  padding: 5px 10px 5px 10px;
+  background-color: rgb(32, 177, 187);
+  border-radius: .25rem;
+  color: #fff;
+}
+
+#treefluxo .estados, .transicoes,
+           .estadomanual, .estadoautomatico, .estadoinicial, .estadofinal, .estadocondicional,
+           .transicaopadrao, .transicaomensagem, .transicaoexpressao, .transicaodeadline {
+  padding: 5px 10px 5px 10px;
+  background-color: rgb(32, 187, 179);
+  border-radius: .25rem;
+  color: #fff;
+}
+
+#treefluxo .passo {
+  padding: 5px 10px 5px 10px;
+  background-color: rgb(32, 187, 153);
+  border-radius: .25rem;
+  color: #fff;
+}
+
+#treefluxo .movimentacaopadrao, .movimentacaodeadline {
+  padding: 5px 10px 5px 10px;
+  background-color: rgb(32, 187, 135);
+  border-radius: .25rem;
+  color: #fff;
+}
+
+#treefluxo .transicaoatribuicao, .movimentacaoatribuicao {
+  padding: 5px 10px 5px 10px;
+  background-color: rgb(36, 173, 98);
+  border-radius: .25rem;
+  color: #fff;
+}
+
+#treefluxo .k-in.k-state-selected {
+  color: #fff;
+  background-color: #acacac;
+  border-color: #acacac;
+}
+
+#treefluxo .k-icon {
+  cursor:pointer;
+    }
+
+/* TREE IDENTIDADE */
+
+#treeidentidade {
+  /*background-color:red;*/
+  color: #607d8b;
+}
+
+  #treeidentidade .k-icon {
+    margin-left:10px;
+    font-size:16px;
+  }
+
+  #treeidentidade .Identidade {
+    padding: 5px 10px 5px 10px;
+    background-color: #22A7BD;
+    border-radius: .25rem;
+    color: #fff;
+  }
+
+  #treeidentidade .Perfil {
+    padding: 5px 10px 5px 10px;
+    background-color: #22A7BD;
+    border-radius: .25rem;
+    color: #fff;
+  }
+
+  #treeidentidade .Funcao {
+    padding: 5px 10px 5px 10px;
+    background-color: #22A7BD;
+    border-radius: .25rem;
+    color: #fff;
+  }
+
+  #treeidentidade .AutorizacoesDoPerfil {
+    padding: 5px 10px 5px 10px;
+    background-color: #22A7BD;
+    border-radius: .25rem;
+    color: #fff;
+  }
+
+  #treeidentidade .MenuConsts {
+    padding: 5px 10px 5px 10px;
+    background-color: #22A7BD;
+    border-radius: .25rem;
+    color: #fff;
+  }
+
+  #treeidentidade .Menu {
+    padding: 5px 10px 5px 10px;
+    background-color: #9c9c9c;
+    border-radius: .25rem;
+    color: #fff;
+  }
+
+  #treeidentidade .PermissaoConsts {
+    padding: 5px 10px 5px 10px;
+    background-color: #22A7BD;
+    border-radius: .25rem;
+    color: #fff;
+  }
+
+  #treeidentidade .AutorizacaoConsts {
+    padding: 5px 10px 5px 10px;
+    background-color: #22A7BD;
+    border-radius: .25rem;
+    color: #fff;
+  }
+
+  #treeidentidade .AutorizacoesIdentidadePerfil {
+    padding: 5px 10px 5px 10px;
+    background-color: #22A7BD;
+    border-radius: .25rem;
+    color: #fff;
+  }
+
+  #treeidentidade .k-in.k-state-selected {
+    color: #fff;
+    background-color: #acacac;
+    border-color: #acacac;
+  }
+
+  #treeidentidade .k-icon {
+cursor:pointer;
+  }

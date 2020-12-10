@@ -1,0 +1,44 @@
+
+{
+  "fields": [
+    {
+      "key": "Id",
+      "type": "input",
+      "templateOptions": { "type": "hidden" }
+    },
+    {
+      "key": "Descricao",
+      "type": "input",
+      "className": "",
+      "templateOptions": {
+        "label": "Descrição",
+        "placeholder": "Descrição",
+        "required": true,
+        "maxLength": 200
+      }
+    },
+    {
+      "key": "Definicao",
+      "type": "htmleditor",
+      "className": "",
+      "templateOptions": {
+        "label": "Definição",
+        "placeholder": "Definição",
+        "required": false
+      }
+    },
+    {
+      "key": "Tamanho",
+      "type": "input",
+      "className": "",
+      "templateOptions": {
+        "type": "number",
+        "label": "Tamanho",
+        "placeholder": "Tamanho",
+        "required": false,
+        "min": 0,
+        "max": 1000
+      }
+    }
+  ]
+}
