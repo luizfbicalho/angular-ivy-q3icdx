@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\agl-kendo",
+    "\\src\\agl-kendo\\src\\baseformly",
+    "\\src\\app",
+    "\\src\\app\\configuracao\\complexidade",
+    "\\src\\assets",
+    "\\src\\assets\\config",
+    "\\src\\environments",
+    "\\src\\images"
+  ],
+  "SelectedNode": "\\src\\app\\app.consts.ts",
+  "PreviewInSolutionExplorer": false
+}

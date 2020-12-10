@@ -55,13 +55,13 @@
     "@progress/kendo-drawing": "1.9.3",
     "@progress/kendo-theme-bootstrap": "4.25.0",
     "@progress/kendo-theme-default": "4.27.0",
-    "@types/applicationinsights-js": "1.0.9",
+   
     "@types/fs-extra": "9.0.4",
     "@types/js-base64": "3.0.0",
-    "angular-jwt": "0.1.11",
-    "applicationinsights-js": "1.0.21",
+
+
     "bootstrap": "4.5.3",
-    "cldr-data": "36.0.0",
+
     "clime": "0.5.14",
     "colors": "1.4.0",
     "file-saver": "2.0.5",

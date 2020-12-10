@@ -29,7 +29,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 load(likelySubtags, weekData, currencyData, numbers, currencies, calendar, dateFields, timeZoneNames);
 
-import { ApiEndpoint, Ambiente, Domain } from './app.consts';
 import { AccountService } from './login/account.service';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
@@ -46,17 +45,16 @@ export function initializeApp(appConfig: AppConfig) {
 }
 
 import { TooltipModule } from '@progress/kendo-angular-tooltip';
-import { UploadModule } from '@progress/kendo-angular-upload';
-import { AppInsightsService } from './shared/applicationInsights/appinsights.service';
-import { ChartsModule } from '@progress/kendo-angular-charts';
+
+
 //import 'hammerjs';
 
 /*NgRx*/
 
-import { environment } from 'src/environments/environment';
+
 
 import { LoginComponent } from './login/login.component';
-import { DragDropModule } from '@angular/cdk/drag-drop';
+
 import { NotificationModule } from '@progress/kendo-angular-notification';
 import { LabelModule } from '@progress/kendo-angular-label';
 import { IndicatorsModule } from '@progress/kendo-angular-indicators';
@@ -74,7 +72,7 @@ import { IndicatorsModule } from '@progress/kendo-angular-indicators';
 		AppRoutingModule,
 		MenuModule,
 		BrowserAnimationsModule,
-		DragDropModule,
+
 		GridModule,
 		SharedModule.forRoot(),
     HttpClientModule,
@@ -87,8 +85,6 @@ import { IndicatorsModule } from '@progress/kendo-angular-indicators';
 		DialogsModule,
 		SortableModule,
 		TooltipModule,
-		UploadModule,
-		ChartsModule,
 		AutoCompleteModule,
 		NotificationModule,
 		LabelModule,
@@ -111,7 +107,6 @@ import { IndicatorsModule } from '@progress/kendo-angular-indicators';
 		},
 		AccountService,
 		{ provide: LOCALE_ID, useValue: 'pt-BR' },
-		AppInsightsService
 	],
 	bootstrap: [ AppComponent ]
 })

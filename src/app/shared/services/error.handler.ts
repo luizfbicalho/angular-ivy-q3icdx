@@ -3,7 +3,6 @@ import { ErrorHandler, Injector } from "@angular/core";
 import { forwardRef } from "@angular/core";
 import { Inject } from "@angular/core";
 import { Injectable } from "@angular/core";
-import { AppInsightsService } from "local/shared/applicationInsights/appinsights.service";
 import { AppConfig } from '../../app.config';
 // Import the application components and services.
 
@@ -36,8 +35,7 @@ export class LoggingErrorHandler implements ErrorHandler {
     // I handle the given error.
   public handleError(error: any): void {
     if (AppConfig.settings.logging.appInsights === "true") {
-      const appInsightsService = this.injector.get(AppInsightsService);
-      appInsightsService.logError(error);
+    
     }
 
         // Log to the console.

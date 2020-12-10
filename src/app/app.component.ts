@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { UserTokenService } from './shared/services/user.token.service';
 import { AccountService } from './login/account.service';
-import { AppInsightsService } from 'local/shared/applicationInsights/appinsights.service';
+
 import { SpinnerService } from './shared/spinner/spinner';
 import { LoginViewModel } from './viewmodels/login.viewmodel';
 
@@ -19,7 +19,7 @@ export class AppComponent {
 	constructor(
 		private _accountService: AccountService,
 		private _userTokenService: UserTokenService,
-		private _appInsightsService: AppInsightsService,
+
 		private _spinnerService: SpinnerService
 	) {
 		this.items = this.mapItems();
