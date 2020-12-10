@@ -5,10 +5,10 @@ import {CanDeactivateComponent } from 'local/shared/models/can.deactivate.compon
 import {ComplexidadeService} from "./complexidade.service";
 import {Complexidade} from 'local/models/complexidade.model';
 import { ToastService } from "local/shared/toast/toast";
-import { BaseFormlyComponent } from '@ngx-formly/agl-kendo';
 import { takeUntil } from 'rxjs/operators';
 import { FormGroup } from '@angular/forms';
 import * as fieldsJson from "./complexidade.json";
+import { BaseFormlyComponent } from '../../../agl-kendo/src/public-api';
 
 @Component({
     templateUrl : './complexidade.create.component.html'

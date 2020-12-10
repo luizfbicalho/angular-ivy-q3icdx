@@ -22,7 +22,6 @@
     "@angular/platform-browser-dynamic": "11.0.3",
     "@angular/router": "11.0.2",
     "@auth0/angular-jwt": "5.0.2",
-    "@ngx-formly/agl-kendo": "5.0.3",
     "@ngx-formly/core": "5.10.7",
     "@ngx-formly/schematics": "5.10.7",
     "@progress/kendo-angular-buttons": "5.5.2",

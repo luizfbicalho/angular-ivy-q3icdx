@@ -8,7 +8,7 @@ import {Complexidade} from 'local/models/complexidade.model';
 import { Subscription } from 'rxjs';
 
 import { ToastService } from "local/shared/toast/toast";
-import { BaseFormlyComponent } from '@ngx-formly/agl-kendo';
+import { BaseFormlyComponent } from '../../../agl-kendo/src/public-api';
 import { takeUntil } from 'rxjs/operators';
 import { FormGroup } from '@angular/forms';
 import * as fieldsJson from "./complexidade.json";

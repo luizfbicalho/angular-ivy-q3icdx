@@ -71,7 +71,7 @@ import { IndicatorsModule } from '@progress/kendo-angular-indicators';
 import { NotificationModule } from '@progress/kendo-angular-notification';
 import { LabelModule } from '@progress/kendo-angular-label';
 import { FormlyModule } from '@ngx-formly/core';
-import { FormlyKendoModule } from '@ngx-formly/agl-kendo';
+import { FormlyKendoModule } from '../../agl-kendo/src/public-api';
 
 load(likelySubtags, weekData, currencyData, numbers, currencies, calendar, dateFields, timeZoneNames);
 @NgModule({
