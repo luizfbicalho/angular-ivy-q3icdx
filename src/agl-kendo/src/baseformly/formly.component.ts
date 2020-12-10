@@ -1,4 +1,4 @@
-import { OnDestroy, OnInit } from '@angular/core';
+import { Directive, OnDestroy, OnInit } from '@angular/core';
 import { FormArray, FormGroup } from '@angular/forms';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 import { DataSourceRequestState } from '@progress/kendo-data-query';
@@ -17,6 +17,7 @@ export interface ObservableKendoActionAutocomplete {
 
 /// aqui tinha uma diretiva
 
+@Directive()
 export abstract class BaseFormlyComponent<T extends {}> implements OnDestroy, FormlyComponent, OnInit {
   private destroy$ = new Subject();
   protected Extensions: KendoExtensions;
