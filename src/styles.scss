@@ -5,7 +5,7 @@
 //@import 'styles/color.css';
 //@import 'styles/formcustom.css';
 //@import 'styles/treeview.css';
-//@import "~ngx-toastr/toastr.css";
+//@import "~ngx-toastr/toastr.css";*/
 
 
 
@@ -31,7 +31,7 @@ $accent: #ff4f00;
 @import "~@progress/kendo-theme-bootstrap/scss/card/_index.scss";
 
 // import configuration from the theme builder
-//@import 'styles/variables.scss';
+@import 'styles/variables.scss';
 // import the base theme
 //
 
@@ -41,13 +41,13 @@ $accent: #ff4f00;
 
 @import 'styles/color.scss';
 
-@import 'styles/header.scss';*/
+@import 'styles/header.scss';
 
-/* Importa o Estilo do Menu*/
-/*@import 'styles/sidebar.scss';
+ //Importa o Estilo do Menu
+ @import 'styles/sidebar.scss';
 @import 'styles/menu.scss';
 
 @import 'styles/pageheader.scss';
 
 @import 'styles/form.scss';
-@import 'styles/notification.scss';*/
+@import 'styles/notification.scss';
