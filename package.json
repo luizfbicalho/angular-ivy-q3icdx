@@ -33,6 +33,7 @@
     "@progress/kendo-data-query": "^1.0.0",
     "@progress/kendo-drawing": "^1.0.0",
     "@progress/kendo-theme-default": "latest",
+    "@progress/kendo-theme-bootstrap": "latest",
     "rxjs": "^6.6.2",
     "tslib": "^2.0.1",
     "zone.js": "0.11.3",
